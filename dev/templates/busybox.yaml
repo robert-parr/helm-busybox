@@ -6,7 +6,7 @@ metadata:
   labels:
     app: busybox3
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
       app: busybox3
